@@ -138,27 +138,137 @@
         </div>
     </section>
 
-    <section id="contact" class="py-20 px-4 bg-slate-900 text-white text-center">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-4xl font-bold mb-6">בואו נדבר על הפרויקט הבא שלכם</h2>
-            <p class="text-slate-300 mb-10 text-lg leading-8">נשמח לקבוע שיחת ייעוץ קצרה ללא עלות כדי להבין האם Impelflow מתאימה לתהליך ההטמעה שלכם.</p>
-            <div class="flex flex-wrap justify-center gap-4 mb-10">
-                <a href="mailto:hello@impelflow.com" class="bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-100 transition">צרו קשר במייל</a>
-                <a href="mailto:hello@impelflow.com?subject=Impelflow%20Pilot" class="border border-white/30 px-8 py-4 rounded-full font-bold hover:bg-white hover:text-slate-900 transition">לקביעת שיחת היכרות</a>
-            </div>
-            <div class="grid md:grid-cols-2 gap-6 text-right">
-                <div class="glass-card p-6 rounded-2xl border border-white/10 text-slate-900">
-                    <h4 class="font-bold text-xl mb-4">פרטי התקשרות</h4>
-                    <p class="mb-2">📧 <a href="mailto:hello@impelflow.com" class="text-blue-700 font-semibold">hello@impelflow.com</a></p>
-                </div>
-                <div class="glass-card p-6 rounded-2xl border border-white/10 text-slate-900">
-                    <h4 class="font-bold text-xl mb-4">טלפונים</h4>
-                    <p class="mb-2">📱 מיטב שקרון עיני: 050-7776205</p>
-                    <p>📱 לירון זוהר: 050-4800220</p>
-                </div>
-            </div>
+    <section id="contact" class="py-20 px-6">
+  <div class="max-w-3xl mx-auto">
+    <div class="bg-white/90 backdrop-blur-md rounded-[32px] shadow-2xl border border-white/30 p-8 md:p-12 text-slate-900">
+
+      <div class="text-center mb-8">
+        <h3 class="text-4xl md:text-5xl font-extrabold mb-4">השאירו פרטים ונחזור אליכם</h3>
+        <p class="text-slate-600 text-lg leading-relaxed">
+          נשמח להבין את הצורך שלכם ולבדוק התאמה ראשונית להטמעת מערכת בעזרת AI וליווי אנושי.
+        </p>
+      </div>
+
+      <form
+        action="https://formspree.io/f/xzdjaqzb"
+        method="POST"
+        class="space-y-4"
+      >
+
+        <input
+          type="text"
+          name="full_name"
+          placeholder="שם מלא"
+          dir="rtl"
+          class="w-full h-14 px-5 text-right rounded-2xl border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="אימייל"
+          dir="rtl"
+          class="w-full h-14 px-5 text-right rounded-2xl border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+          required
+        />
+
+        <input
+          type="tel"
+          name="phone"
+          placeholder="טלפון"
+          dir="rtl"
+          class="w-full h-14 px-5 text-right rounded-2xl border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+          required
+        />
+
+        <input
+          type="text"
+          name="company"
+          placeholder="שם החברה"
+          dir="rtl"
+          class="w-full h-14 px-5 text-right rounded-2xl border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+        />
+
+        <select
+            name="company_size"
+            dir="rtl"
+            class="w-full h-14 px-5 text-right rounded-2xl border border-slate-200 bg-white text-slate-400 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+            required
+            >
+
+            <option value="" disabled selected hidden>
+            מספר עובדים בארגון
+            </option>
+
+            <option class="text-slate-900" value="1-10">1–10</option>
+            <option class="text-slate-900" value="11-20">11-20</option>
+            <option class="text-slate-900" value="21-30">21-30</option>
+            <option class="text-slate-900" value="30+">30+</option>
+
+        </select>
+
+        <select
+          name="system_type"
+          dir="rtl"
+          class="w-full h-14 px-5 text-right rounded-2xl border border-slate-200 bg-white text-slate-400 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+          required
+        >
+          <option value="" disabled selected hidden>סוג מערכת להטמעה</option>
+          <option value="ERP">ERP</option>
+          <option value="CRM">CRM</option>
+          <option value="Medical System">מערכת רפואית</option>
+          <option value="Internal System">מערכת פנימית ארגונית</option>
+          <option value="Other">אחר</option>
+          <option value="Not Sure Yet">עדיין לא בטוחים</option>
+        </select>
+
+        <select
+          name="timeline"
+          dir="rtl"
+          class="w-full h-14 px-5 text-right rounded-2xl border border-slate-200 bg-white text-slate-400 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+          required
+        >
+          <option value="" disabled selected hidden>מתי אתם מתכננים להתחיל?</option>
+          <option value="Immediately">בחודש הקרוב</option>
+          <option value="1-3 Months">בחודשיים–שלושה הקרובים</option>
+          <option value="3-6 Months">בשלושת–ששת החודשים הקרובים</option>
+          <option value="Exploring">עדיין בשלבי בדיקה</option>
+        </select>
+
+
+        <input type="hidden" name="_subject" value="פנייה חדשה מאתר Impelflow" />
+        <button
+          type="submit"
+          class="w-full h-14 rounded-2xl bg-blue-600 text-white font-bold text-lg hover:bg-blue-700 transition shadow-lg shadow-blue-600/20"
+        >
+          שלחו פנייה
+        </button>
+      </form>
+
+      <div class="mt-8 pt-6 border-t border-slate-200 text-center">
+        <p class="text-sm text-slate-500 mb-4">
+          או אם נוח לכם, אפשר גם לדבר ישירות:
+        </p>
+
+        <div class="flex flex-col gap-2 text-base">
+          <a href="tel:+972507776205" class="text-blue-700 font-semibold hover:underline">
+            מיטב שקרון עיני — 050-7776205
+          </a>
+          <a href="tel:+972504800220" class="text-blue-700 font-semibold hover:underline">
+            לירון זוהר — 050-4800220
+          </a>
+          <a
+            href="mailto:hello@impelflow.com?subject=פנייה דרך אתר Impelflow&body=שלום,%0A%0Aאשמח לקבל מידע נוסף לגבי השירות.%0A%0Aשם:%0Aחברה:%0Aטלפון:%0Aסוג מערכת:%0Aמספר עובדים:%0A"
+            class="text-blue-700 font-semibold hover:underline"
+          >
+            📧 hello@impelflow.com
+          </a>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
     <footer class="bg-slate-950 text-slate-400 py-8 text-center px-4">
         <p>© 2026 Impelflow — הטמעת מערכות בסיוע AI</p>
