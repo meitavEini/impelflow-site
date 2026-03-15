@@ -10,35 +10,91 @@
     body { font-family: 'Assistant', sans-serif; }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900 min-h-screen flex items-center justify-center px-6">
+<body class="min-h-screen bg-slate-50 text-slate-900">
 
-  <div class="max-w-2xl w-full bg-white rounded-[32px] shadow-2xl border border-slate-200 p-10 md:p-14 text-center">
-    
-    <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 mb-6">
-      <span class="text-4xl">✓</span>
-    </div>
-
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-slate-900">
-      תודה, קיבלנו את הפנייה
-    </h1>
-
-    <p class="text-lg md:text-xl text-slate-600 leading-relaxed mb-8">
-      הפרטים שלכם התקבלו בהצלחה. ניצור איתכם קשר בהקדם לבדיקת התאמה ראשונית והמשך שיחה.
-    </p>
-
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="/"
-         class="inline-flex items-center justify-center h-14 px-8 rounded-2xl bg-blue-600 text-white font-bold text-lg hover:bg-blue-700 transition shadow-lg shadow-blue-600/20">
-        חזרה לדף הבית
-      </a>
-
-      <a href="mailto:hello@impelflow.com?subject=המשך פנייה דרך אתר Impelflow"
-         class="inline-flex items-center justify-center h-14 px-8 rounded-2xl border border-slate-300 text-slate-800 font-bold text-lg hover:bg-slate-50 transition">
-        אפשר גם לשלוח מייל
+  <header class="w-full bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="/" class="text-3xl font-extrabold text-blue-700">Impelflow</a>
+      <a href="/" class="inline-flex items-center justify-center px-6 h-11 rounded-full bg-blue-600 text-white font-bold hover:bg-blue-700 transition">
+        חזרה לאתר
       </a>
     </div>
+  </header>
 
-  </div>
+  <main class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950 to-blue-700"></div>
+    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top,white_0%,transparent_35%)]"></div>
+
+    <section class="relative px-6 py-24 md:py-32">
+      <div class="max-w-3xl mx-auto">
+        <div class="rounded-[36px] border border-white/15 bg-white/10 backdrop-blur-xl shadow-2xl p-8 md:p-14 text-center text-white">
+          
+          <div class="mx-auto mb-8 flex items-center justify-center w-20 h-20 rounded-full bg-white/15 border border-white/20">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+
+          <p class="inline-flex items-center px-5 py-2 rounded-full border border-white/20 bg-white/10 text-sm md:text-base font-semibold mb-6">
+            הפנייה נשלחה בהצלחה
+          </p>
+
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+            תודה, קיבלנו את הפרטים שלכם
+          </h1>
+
+          <p class="text-lg md:text-2xl text-white/85 leading-relaxed max-w-2xl mx-auto mb-10">
+            נבחן את הפנייה וניצור קשר בהקדם כדי לבדוק התאמה ראשונית, להבין את הצורך שלכם, ולבחון כיצד Impelflow יכולה לסייע בהטמעה יעילה יותר של המערכת.
+          </p>
+
+          <div class="grid gap-4 md:grid-cols-3 text-right mb-10">
+            <div class="rounded-2xl bg-white/10 border border-white/15 p-5">
+              <h3 class="font-bold text-lg mb-2">מה השלב הבא?</h3>
+              <p class="text-white/80 text-sm leading-7">
+                נעבור על הפרטים ששלחתם ונבין את אופי הפרויקט והמורכבות שלו.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-white/10 border border-white/15 p-5">
+              <h3 class="font-bold text-lg mb-2">מתי נחזור אליכם?</h3>
+              <p class="text-white/80 text-sm leading-7">
+                בדרך כלל בתוך זמן קצר, בהתאם לסוג הפנייה ולפרטי ההטמעה.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-white/10 border border-white/15 p-5">
+              <h3 class="font-bold text-lg mb-2">רוצים ליצור קשר עכשיו?</h3>
+              <p class="text-white/80 text-sm leading-7">
+                אפשר גם לדבר ישירות בטלפון או לשלוח מייל להמשך בירור מיידי.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <a href="/"
+               class="inline-flex items-center justify-center h-14 px-8 rounded-2xl bg-white text-blue-700 font-extrabold text-lg hover:bg-slate-100 transition">
+              חזרה לדף הבית
+            </a>
+
+            <a href="mailto:hello@impelflow.com?subject=המשך פנייה דרך אתר Impelflow"
+               class="inline-flex items-center justify-center h-14 px-8 rounded-2xl border border-white/25 bg-white/10 text-white font-bold text-lg hover:bg-white/15 transition">
+              שליחת מייל
+            </a>
+          </div>
+
+          <div class="pt-8 border-t border-white/15 text-white/85">
+            <p class="mb-3 text-sm md:text-base">אפשר גם לדבר ישירות:</p>
+            <div class="flex flex-col gap-2 text-base md:text-lg font-semibold">
+              <a href="tel:+972507776205" class="hover:underline">מיטב שקרון עיני — 050-7776205</a>
+              <a href="tel:+972504800220" class="hover:underline">לירון זוהר — 050-4800220</a>
+              <a href="mailto:hello@impelflow.com" class="hover:underline">hello@impelflow.com</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
 
 </body>
 </html>
