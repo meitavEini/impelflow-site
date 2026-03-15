@@ -4,80 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impelflow | הטמעת מערכות בסיוע AI</title>
+    <meta name="description" content="Impelflow עוזרת לעסקים קטנים ובינוניים להטמיע מערכות עבודה חדשות בצורה יעילה, מסודרת ומתמשכת באמצעות AI, בסיס ידע וליווי אנושי.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
+        html { scroll-behavior: smooth; }
         body { font-family: 'Assistant', sans-serif; }
-        .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .hero-gradient {
+            background:
+                radial-gradient(circle at top right, rgba(96,165,250,0.22), transparent 24%),
+                radial-gradient(circle at top left, rgba(191,219,254,0.12), transparent 18%),
+                linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
+        }
+        .glass-card {
+            background: rgba(255,255,255,0.72);
+            backdrop-filter: blur(10px);
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-slate-50 text-slate-900">
 
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="bg-white/90 backdrop-blur border-b border-slate-200 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-blue-700">Impelflow</div>
-            <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">צרו קשר</a>
+            <div class="text-2xl font-extrabold tracking-tight text-blue-700">Impelflow</div>
+            <a href="#contact" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition">צרו קשר</a>
         </div>
     </nav>
 
-    <section class="hero-gradient text-white py-20 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">הטמעת מערכות עסקיות חדשות ללא צורך בצוותי ייעוץ גדולים</h1>
-            <p class="text-xl mb-8 opacity-90">אנחנו עוזרים לעסקים קטנים ובינוניים להטמיע מערכות עבודה חדשות בצורה מסודרת, ברורה ופשוטה יותר בסיוע AI.</p>
+    <section class="hero-gradient text-white py-24 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 text-sm md:text-base bg-white/10 border border-white/15 px-4 py-2 rounded-full mb-6">
+                <span>AI-Assisted System Adoption</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">עוזרים לעובדים לאמץ מערכות חדשות — בעזרת AI וליווי אנושי</h1>
+            <p class="text-xl md:text-2xl mb-10 text-blue-50 max-w-3xl mx-auto leading-relaxed">
+                Impelflow עוזרת לעסקים קטנים ובינוניים להטמיע מערכות עבודה חדשות בצורה יעילה, מסודרת ומתמשכת — בלי תלות ארוכת טווח בצוותי תמיכה גדולים.
+            </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="#about" class="bg-white text-blue-700 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">איך זה עובד?</a>
-                <a href="#contact" class="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-700 transition">תיאום שיחת ייעוץ</a>
+                <a href="#about" class="bg-white text-blue-700 px-8 py-3.5 rounded-full font-bold hover:bg-blue-50 transition">איך זה עובד?</a>
+                <a href="#contact" class="border border-white/60 px-8 py-3.5 rounded-full font-bold hover:bg-white hover:text-blue-700 transition">תיאום שיחת ייעוץ</a>
             </div>
         </div>
     </section>
 
     <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">הבעיה היא לא רק ההטמעה — אלא מה שקורה אחריה</h2>
+            <p class="text-lg text-slate-600 leading-8 max-w-3xl mx-auto">
+                גם אחרי שהמערכת עולה לאוויר, עובדים עדיין שואלים שאלות, נתקעים בתהליכים, ותלויים במי שיסביר להם שוב.
+            </p>
+            <p class="text-lg text-slate-600 leading-8 max-w-3xl mx-auto">
+                בלי שכבת תמיכה ברורה ומתמשכת, הידע נשאר אצל אנשים — ולא אצל הארגון.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 bg-slate-50">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">האתגר שכולנו מכירים</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">האתגר שכולנו מכירים</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-6 bg-red-50 rounded-xl">
+                <div class="p-7 bg-red-50 rounded-2xl border border-red-100 shadow-sm">
                     <div class="text-red-600 text-3xl mb-4">❓</div>
                     <h3 class="font-bold text-xl mb-2">שאלות חוזרות</h3>
-                    <p>משתמשים שואלים שוב ושוב את אותן שאלות וגוזלים זמן יקר מהצוות הפנימי.</p>
+                    <p class="text-slate-700 leading-7">משתמשים שואלים שוב ושוב את אותן שאלות וגוזלים זמן יקר מהצוות הפנימי.</p>
                 </div>
-                <div class="p-6 bg-red-50 rounded-xl">
+                <div class="p-7 bg-red-50 rounded-2xl border border-red-100 shadow-sm">
                     <div class="text-red-600 text-3xl mb-4">📉</div>
                     <h3 class="font-bold text-xl mb-2">חוסר אימוץ</h3>
-                    <p>הבעיה היא לא המערכת, אלא העובדה שהעובדים לא באמת מאמצים אותה לשימוש יומיומי.</p>
+                    <p class="text-slate-700 leading-7">הבעיה היא לא המערכת, אלא העובדה שהעובדים לא באמת מאמצים אותה לשימוש יומיומי.</p>
                 </div>
-                <div class="p-6 bg-red-50 rounded-xl">
+                <div class="p-7 bg-red-50 rounded-2xl border border-red-100 shadow-sm">
                     <div class="text-red-600 text-3xl mb-4">💰</div>
                     <h3 class="font-bold text-xl mb-2">תלות יקרה</h3>
-                    <p>תלות מתמדת במטמיעים אנושיים ובצוותי IT שאינם תמיד זמינים ברגע האמת.</p>
+                    <p class="text-slate-700 leading-7">תלות מתמדת במטמיעים אנושיים ובצוותי IT שאינם תמיד זמינים ברגע האמת.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-16 px-4">
+    <section id="about" class="py-16 px-4 bg-white">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">הפתרון של Impelflow: שלושה שלבים להצלחה</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">הפתרון של Impelflow</h2>
             <div class="space-y-8">
-                <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="bg-blue-100 text-blue-700 text-4xl font-bold w-16 h-16 flex items-center justify-center rounded-full shrink-0">1</div>
+                <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <div class="bg-blue-100 text-blue-700 text-3xl font-extrabold w-16 h-16 flex items-center justify-center rounded-full shrink-0">1</div>
                     <div>
-                        <h3 class="text-2xl font-bold mb-2">אפיון המערכת (Discovery)</h3>
-                        <p class="text-gray-600">אנו סוקרים את המערכת ומזהים את תהליכי העבודה הקריטיים שהצוות שלך חייב להכיר.</p>
+                        <h3 class="text-2xl font-bold mb-2">אפיון המערכת</h3>
+                        <p class="text-slate-600 text-lg leading-8">אנו סוקרות את המערכת ומזהות את תהליכי העבודה הקריטיים, השאלות החוזרות ונקודות החיכוך של המשתמשים.</p>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="bg-blue-100 text-blue-700 text-4xl font-bold w-16 h-16 flex items-center justify-center rounded-full shrink-0">2</div>
+                <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <div class="bg-blue-100 text-blue-700 text-3xl font-extrabold w-16 h-16 flex items-center justify-center rounded-full shrink-0">2</div>
                     <div>
                         <h3 class="text-2xl font-bold mb-2">תמיכת ידע מבוססת AI</h3>
-                        <p class="text-gray-600">בניית שכבת ידע חכמה שנותנת מענה מיידי לשאלות כמו "איך מבצעים משימה?" או "איך פותרים שגיאה?".</p>
+                        <p class="text-slate-600 text-lg leading-8">אנחנו בונות שכבת ידע חכמה שנותנת מענה מיידי לשאלות כמו “איך מבצעים משימה?”, “איך פותרים שגיאה?” או “איפה מוצאים פעולה מסוימת?”.</p>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="bg-blue-100 text-blue-700 text-4xl font-bold w-16 h-16 flex items-center justify-center rounded-full shrink-0">3</div>
+                <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <div class="bg-blue-100 text-blue-700 text-3xl font-extrabold w-16 h-16 flex items-center justify-center rounded-full shrink-0">3</div>
                     <div>
                         <h3 class="text-2xl font-bold mb-2">ליווי אימוץ המערכת</h3>
-                        <p class="text-gray-600">הדרכה ותמיכה ממוקדת לבניית ביטחון אצל המשתמשים, עם נוכחות אנושית בשלבים הקריטיים.</p>
+                        <p class="text-slate-600 text-lg leading-8">בימי ההטמעה הראשונים יש גם נוכחות אנושית. במקרים שה-AI לא יודע לענות עליהם, יש מענה אנושי שממשיך את התהליך בצורה בטוחה וברורה.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 bg-slate-50">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-10">למי השירות מתאים?</h2>
+            <div class="grid md:grid-cols-3 gap-6 text-right">
+                <div class="p-6 border border-slate-200 rounded-2xl bg-white shadow-sm">
+                    <h3 class="font-bold text-xl mb-3">עסקים קטנים ובינוניים</h3>
+                    <p class="text-slate-600 leading-7">שמטמיעים מערכת חדשה ואין להם מערך הדרכה ותמיכה גדול לאורך זמן.</p>
+                </div>
+                <div class="p-6 border border-slate-200 rounded-2xl bg-white shadow-sm">
+                    <h3 class="font-bold text-xl mb-3">ארגונים בתהליך מעבר</h3>
+                    <p class="text-slate-600 leading-7">שצריכים לעזור לעובדים להסתגל לתהליכים חדשים במהירות ובביטחון.</p>
+                </div>
+                <div class="p-6 border border-slate-200 rounded-2xl bg-white shadow-sm">
+                    <h3 class="font-bold text-xl mb-3">צוותים עם שאלות חוזרות</h3>
+                    <p class="text-slate-600 leading-7">שמבזבזים זמן יקר על תמיכה ידנית ושאלות שחוזרות שוב ושוב.</p>
                 </div>
             </div>
         </div>
@@ -85,22 +133,25 @@
 
     <section class="py-16 bg-blue-50 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">מתחילים עם פיילוט ממוקד</h2>
-            <p class="text-lg mb-8 text-gray-700">אנחנו מציעים פרויקט פיילוט המיועד לתמוך בצוות אחד במהלך המעבר, כדי שתוכלו לבחון את הגישה לפני ההרחבה לכל הארגון.</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">מתחילים עם פיילוט ממוקד</h2>
+            <p class="text-lg mb-8 text-slate-700 leading-8">אנחנו מציעות פיילוט לצוות אחד או לתהליך אחד, כדי לבדוק איך AI, בסיס ידע וליווי אנושי יכולים להפחית שאלות חוזרות ולחזק את אימוץ המערכת לפני הרחבה.</p>
         </div>
     </section>
 
-    <section id="contact" class="py-16 px-4 bg-white text-center">
-        <div class="max-w-2xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8">בואו נדבר על הפרויקט הבא שלכם</h2>
-            <p class="text-gray-600 mb-10 text-lg">נשמח לקבוע שיחת ייעוץ קצרה ללא עלות כדי לאפיין את הצרכים שלכם.</p>
-            
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="p-6 border rounded-xl">
+    <section id="contact" class="py-20 px-4 bg-slate-900 text-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-6">בואו נדבר על הפרויקט הבא שלכם</h2>
+            <p class="text-slate-300 mb-10 text-lg leading-8">נשמח לקבוע שיחת ייעוץ קצרה ללא עלות כדי להבין האם Impelflow מתאימה לתהליך ההטמעה שלכם.</p>
+            <div class="flex flex-wrap justify-center gap-4 mb-10">
+                <a href="mailto:hello@impelflow.com" class="bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-100 transition">צרו קשר במייל</a>
+                <a href="mailto:hello@impelflow.com?subject=Impelflow%20Pilot" class="border border-white/30 px-8 py-4 rounded-full font-bold hover:bg-white hover:text-slate-900 transition">לקביעת שיחת היכרות</a>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 text-right">
+                <div class="glass-card p-6 rounded-2xl border border-white/10 text-slate-900">
                     <h4 class="font-bold text-xl mb-4">פרטי התקשרות</h4>
-                    <p class="mb-2">📧 <a href="mailto:hello@impelflow.com" class="text-blue-600 font-semibold">hello@impelflow.com</a></p>
+                    <p class="mb-2">📧 <a href="mailto:hello@impelflow.com" class="text-blue-700 font-semibold">hello@impelflow.com</a></p>
                 </div>
-                <div class="p-6 border rounded-xl">
+                <div class="glass-card p-6 rounded-2xl border border-white/10 text-slate-900">
                     <h4 class="font-bold text-xl mb-4">טלפונים</h4>
                     <p class="mb-2">📱 מיטב שקרון עיני: 050-7776205</p>
                     <p>📱 לירון זוהר: 050-4800220</p>
@@ -109,8 +160,8 @@
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-white py-8 text-center px-4">
-        <p>© 2026 Impelflow - AI Assisted System Implementation</p>
+    <footer class="bg-slate-950 text-slate-400 py-8 text-center px-4">
+        <p>© 2026 Impelflow — הטמעת מערכות בסיוע AI</p>
     </footer>
 
 </body>
