@@ -11,13 +11,21 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מאמרים | Impelflow - הטמעת מערכות</title>
-    <meta name="description" content="מדריכים ותוכן מקצועי על הטמעת CRM ואימוץ טכנולוגי בארגונים.">
+    <title>מרכז ידע | Impelflow - השוואת מערכות והטמעה חכמה</title>
+    <meta name="description"
+        content="מדריכים, השוואות ותוכן מקצועי על הטמעת CRM, מערכות ERP ואימוץ טכנולוגי בארגונים.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
     <style>
         body { font-family: 'Assistant', sans-serif; }
-        .hero-gradient { background: linear-gradient(135deg, #1e293b 0%, #1d4ed8 100%); }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e293b 0%, #1d4ed8 100%);
+        }
+        .article-card:hover {
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
     </style>
 </head>
 
@@ -25,10 +33,11 @@
 
     <nav class="bg-white/90 backdrop-blur border-b border-slate-200 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-8">
+            <div class="flex items-center gap-6">
                 <a href="index.html" class="text-2xl font-extrabold tracking-tight text-blue-700">Impelflow</a>
-                <div class="hidden md:flex items-center">
-                    <a href="knowledge.html" class="text-sm font-semibold text-blue-600 border-r pr-6 border-slate-200 transition">מאמרים</a>
+                <div class="hidden md:flex gap-4 border-r pr-6 border-slate-200">
+                    <a href="index.html" class="hover:text-blue-600 transition">דף הבית</a>
+                    <a href="#" class="font-bold text-blue-600">מרכז ידע</a>
                 </div>
             </div>
             <a href="index.html#contact" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition">צרו קשר</a>
@@ -37,82 +46,67 @@
 
     <header class="hero-gradient text-white py-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">המאמרים של Impelflow</h1>
-            <p class="text-xl text-blue-100">כל מה שצריך לדעת על בחירת מערכות והטמעה נכונה.</p>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">מרכז הידע של Impelflow</h1>
+            <p class="text-xl text-blue-100">כל מה שצריך לדעת על בחירת מערכות, הטמעה נכונה ואימוץ טכנולוגי.</p>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto py-16 px-4">
-        
-        <article class="bg-white rounded-[40px] shadow-sm border border-slate-200 overflow-hidden">
-            <div class="p-8 md:p-16">
-                
-                <div class="text-blue-600 font-bold text-sm mb-6 uppercase tracking-widest">ניהול וטכנולוגיה</div>
-                <h2 class="text-3xl md:text-5xl font-extrabold mb-10 leading-tight text-slate-900">10 סימנים שהעסק שלך חייב לעבור למערכת חדשה</h2>
-                
-                <p class="text-xl text-slate-600 leading-relaxed mb-12 border-r-4 border-blue-600 pr-6">
-                    מנהלים רבים גוררים מערכות ישנות שנים מתוך חשש מהשינוי. אך המציאות היא שכל יום על מערכת לא מותאמת מייצר בזבוז משאבים מצטבר. הנה עשרת הסימנים שהגיע הזמן להתקדם.
-                </p>
-
-                <div class="space-y-12">
-                    <div class="flex gap-6">
-                        <span class="text-blue-600/20 text-5xl font-black">01</span>
-                        <div>
-                            <h3 class="text-2xl font-bold text-slate-800 mb-2">ניהול מידע מבוזר באקסלים</h3>
-                            <p class="text-slate-600 text-lg leading-8">כאשר המידע הקריטי על הלקוחות מנוהל בגיליונות אקסל פרטיים ולא במערכת מרכזית.</p>
-                        </div>
+    <main class="max-w-5xl mx-auto py-16 px-4">
+        <div class="grid md:grid-cols-1 gap-12">
+            
+            <article class="bg-white rounded-[32px] overflow-hidden shadow-xl border border-slate-100 flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-blue-600 p-12 flex items-center justify-center">
+                    <span class="text-6xl">📊</span>
+                </div>
+                <div class="p-8 md:p-12 md:w-2/3">
+                    <div class="text-blue-600 font-bold text-sm mb-4 uppercase tracking-wider">השוואת מערכות</div>
+                    <h2 class="text-3xl font-bold mb-6 leading-tight">הכוורת, Zoho או Monday? המדריך לבחירת CRM והטמעה נכונה</h2>
+                    <div class="space-y-4 text-slate-600 leading-8">
+                        <p>בחירת מערכת CRM היא אחת ההחלטות הקריטיות ביותר לעסק. בעוד ש<strong>הכוורת</strong> מציעה פתרון ישראלי מושלם עם עברית מובנית וסליקה, <strong>Zoho</strong> פותחת עולם של אוטומציות מורכבות למוקדי מכירות גדולים.</p>
+                        <p>אבל האמת היא שהמערכת היא רק 20% מההצלחה. ה-80% הנותרים הם <strong>האימוץ של העובדים בשטח</strong>. ללא הדרכה ויזואלית שצמודה לתהליך העבודה, המערכת תישאר ריקה מנתונים.</p>
+                    </div>
+                    
+                    <div class="mt-8 pt-8 border-t border-slate-100">
+                        <h4 class="font-bold text-slate-900 mb-4">במאמר זה נסקור:</h4>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-slate-600">
+                            <li>• יתרונות וחסרונות של המערכות המובילות</li>
+                            <li>• התאמה לפי גודל צוות וסוג עסק</li>
+                            <li>• איך למנוע התנגדות עובדים למערכת חדשה</li>
+                            <li>• ממשקי סליקה ונדרים+ לעמותות</li>
+                        </ul>
                     </div>
 
-                    <div class="flex gap-6">
-                        <span class="text-blue-600/20 text-5xl font-black">02</span>
-                        <div>
-                            <h3 class="text-2xl font-bold text-slate-800 mb-2">חוסר סנכרון ותהליכים ידניים</h3>
-                            <p class="text-slate-600 text-lg leading-8">הזנה ידנית של נתונים בין מערכות (כמו ממערכת סליקה ל-CRM) היא סימן מובהק למערכת מיושנת.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-6">
-                        <span class="text-blue-600/20 text-5xl font-black">03</span>
-                        <div>
-                            <h3 class="text-2xl font-bold text-slate-800 mb-2">תלות בלעדית בידע של עובדים</h3>
-                            <p class="text-slate-600 text-lg leading-8">אם המידע על הלקוח נמצא בראש של עובד ספציפי ולא מתועד בצורה נגישה, העסק נמצא בסיכון.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-6">
-                        <span class="text-blue-600/20 text-5xl font-black">04</span>
-                        <div>
-                            <h3 class="text-2xl font-bold text-slate-800 mb-2">עקומת למידה חדה מדי</h3>
-                            <p class="text-slate-600 text-lg leading-8">מערכת שדורשת שבועות של הכשרה רק כדי לבצע פעולות בסיסיות פוגעת בפריון הארגון.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-6">
-                        <span class="text-blue-600/20 text-5xl font-black">05</span>
-                        <div>
-                            <h3 class="text-2xl font-bold text-slate-800 mb-2">קושי בהפקת דוחות בזמן אמת</h3>
-                            <p class="text-slate-600 text-lg leading-8">מנהל שלא יכול לקבל תמונת מצב מדויקת בלחיצת כפתור אחת, מנווט את העסק שלו בערפל.</p>
-                        </div>
+                    <div class="mt-10 flex flex-wrap gap-4">
+                        <a href="index.html#contact" class="bg-slate-900 text-white px-8 py-3 rounded-2xl font-bold hover:bg-slate-800 transition">מעניין אותי, בואו נדבר</a>
                     </div>
                 </div>
+            </article>
 
-                <div class="mt-20 p-10 bg-slate-900 rounded-[2.5rem] text-white flex flex-col md:flex-row items-center justify-between gap-8">
-                    <div class="text-center md:text-right">
-                        <h3 class="text-2xl font-bold mb-2">הבעיה היא לא המעבר, אלא ה"יום שאחרי"</h3>
-                        <p class="text-slate-400 text-sm">אנחנו בונים עבורכם שכבת הדרכה חכמה שמלווה את העובד צעד אחר צעד.</p>
-                    </div>
-                    <a href="index.html#contact" class="bg-blue-600 text-white px-8 py-3.5 rounded-full font-bold hover:bg-blue-700 transition whitespace-nowrap shadow-lg shadow-blue-900/40">
-                        תיאום שיחת אפיון
-                    </a>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 opacity-60">
+                    <div class="text-slate-400 font-bold text-sm mb-2 uppercase italic">בקרוב...</div>
+                    <h3 class="text-xl font-bold text-slate-400 mb-4">איך מעבירים עמותה מאקסל לניהול דיגיטלי בלי לאבד נתונים?</h3>
+                    <div class="w-20 h-1 bg-slate-200"></div>
                 </div>
-
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 opacity-60">
+                    <div class="text-slate-400 font-bold text-sm mb-2 uppercase italic">בקרוב...</div>
+                    <h3 class="text-xl font-bold text-slate-400 mb-4">5 טעויות קריטיות בהטמעת מערכת רפואית חדשה</h3>
+                    <div class="w-20 h-1 bg-slate-200"></div>
+                </div>
             </div>
-        </article>
 
+        </div>
     </main>
 
-    <footer class="bg-slate-950 text-slate-400 py-12 text-center px-4">
-        <p class="text-white font-bold mb-2">Impelflow</p>
+    <section class="py-16 bg-blue-50 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">רוצים לקבל תוכן מקצועי נוסף?</h2>
+            <p class="text-lg mb-8 text-slate-700">אנחנו מעדכנות את מרכז הידע שלנו באופן שוטף עם תובנות מעולם הטמעת המערכות וה-AI.</p>
+            <a href="index.html#contact" class="text-blue-700 font-bold hover:underline">חזרה לדף הבית ותיאום שיחה</a>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-8 text-center px-4">
         <p>© 2026 Impelflow — הטמעת מערכות בסיוע AI</p>
     </footer>
 
